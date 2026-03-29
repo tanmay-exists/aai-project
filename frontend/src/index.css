@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+/* If you want the body to be dark by default */
+:root {
+  background-color: #020617; /* This is slate-950 */
+  color: #f8fafc; /* This is slate-50 */
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+/* Minimalist Scrollbar */
+.custom-scrollbar::-webkit-scrollbar { width: 5px; }
+.custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+.custom-scrollbar::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 10px; }
+.custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #334155; }
+
+/* Markdown Overrides */
+.prose h1, .prose h2, .prose h3 { @apply text-blue-400 mb-2 mt-4 font-bold; }
+.prose ul { @apply list-disc list-inside space-y-1 mb-4 text-slate-400; }
+.prose p { @apply text-slate-300 leading-relaxed mb-4; }
+.prose strong { @apply text-slate-100 font-semibold; }
