@@ -6,7 +6,7 @@ import { StringOutputParser } from "@langchain/core/output_parsers";
 import 'dotenv/config';
 
 const app = express();
-app.use(cors());
+app.use(cors({origin: 'https://aai-project-three.vercel.app'}));
 app.use(express.json());
 
 // Helper to prevent hitting rate limits during the sequential pipeline
